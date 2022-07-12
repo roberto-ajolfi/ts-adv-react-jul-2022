@@ -6,32 +6,32 @@ export interface IHoverProps {
 
 export const Hover: React.FC<IHoverProps> = (props) => {
     const [over, setOver] = React.useState(false);
-    const elementId = React.useId();    // <== NEW HOOK (v.18)
+    // const elementId = React.useId();    // <== NEW HOOK (v.18)
 
-    React.useEffect(() => {
-        const hoverElement = document.getElementById(`hover-${elementId}`);
-        hoverElement?.addEventListener("mouseover", handleEnter);
-        hoverElement?.addEventListener("mouseout", handleLeave);
-        return () => {
-            hoverElement?.removeEventListener("mouseover", handleEnter);
-            hoverElement?.removeEventListener("mouseout", handleLeave);
-        }
-    }, []);
+    // React.useEffect(() => {
+    //     const hoverElement = document.getElementById(`hover-${elementId}`);
+    //     hoverElement?.addEventListener("mouseover", handleOver);
+    //     hoverElement?.addEventListener("mouseout", handleOut);
+    //     return () => {
+    //         hoverElement?.removeEventListener("mouseover", handleOver);
+    //         hoverElement?.removeEventListener("mouseout", handleOut);
+    //     }
+    // }, []);
 
-    const handleEnter = () => {
+    const handleOver = () => {
         console.log("handleHovering() invoked");
         setOver(true);
         return true;
     };
 
-    const handleLeave = () => {
+    const handleOut = () => {
         console.log("handleLeave() invoked");
         setOver(false);
         return true;
     };
 
-    return (<div id={`hover-${elementId}`}
-            // onMouseEnter={handleEnter} onMouseLeave={handleLeave}    // <== GONZO ...
+    return (<div //id={`hover-${elementId}`}
+            onMouseEnter={handleOver} onMouseLeave={handleOut}    // <== GONZO ...
             style={{ border: "2px solid crimson", padding: "5px" }}>
         {props.render(over)}
     </div>);

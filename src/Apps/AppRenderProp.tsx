@@ -1,5 +1,6 @@
 import React, { CSSProperties } from 'react'
 import { Hover } from '../components/Hover'
+import { HoverChild } from '../components/HoverChild';
 
 export const AppRenderProp = () => {
   return (
@@ -12,6 +13,18 @@ export const AppRenderProp = () => {
             </div>
             <div className='col-6'>
                 <h2>Render Props (con children)</h2>
+                <HoverChild>
+                    {(over: boolean) => {
+                            return (<Label text="Prova" over={over} />);
+                        }  
+                    }
+                </HoverChild>
+                <HoverChild>
+                    {(over: boolean) => {
+                            return (<Button text="Prova" over={over} />);
+                        }  
+                    }
+                </HoverChild>
             </div>
         </div>
     </div>
