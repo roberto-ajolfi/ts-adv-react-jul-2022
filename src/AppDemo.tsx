@@ -6,6 +6,7 @@ import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import App from './Apps/App';
 import NoMatch from './NoMatch';
+import { AppContext } from './Apps/AppContext';
 
 export interface DemoApp {
   name: string;
@@ -13,7 +14,8 @@ export interface DemoApp {
 }
 
 const demoApps: DemoApp[] = [
-  { name: "Welcome", component: <App />},
+  { name: "Welcome", component: <App /> },
+  { name: "Context", component: <AppContext /> },
 ];
 
 const AppDemo = () => {
