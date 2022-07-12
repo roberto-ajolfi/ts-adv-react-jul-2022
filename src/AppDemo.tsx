@@ -8,6 +8,7 @@ import App from './Apps/App';
 import NoMatch from './NoMatch';
 import { AppContext } from './Apps/AppContext';
 import { AppErrorBoundary } from './Apps/AppErrorBoundary';
+import { AppRenderProp } from './Apps/AppRenderProp';
 
 export interface DemoApp {
   name: string;
@@ -17,7 +18,8 @@ export interface DemoApp {
 const demoApps: DemoApp[] = [
   { name: "Welcome", component: <App /> },
   { name: "Context", component: <AppContext /> },
-  { name: "ErrBoundary", component: <AppErrorBoundary /> },
+  { name: "Error Boundary", component: <AppErrorBoundary /> },
+  { name: "Render Props", component: <AppRenderProp /> },
 ];
 
 const AppDemo = () => {
