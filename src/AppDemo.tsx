@@ -10,6 +10,7 @@ import { AppContext } from './Apps/AppContext';
 import { AppErrorBoundary } from './Apps/AppErrorBoundary';
 import { AppRenderProp } from './Apps/AppRenderProp';
 import { AppHOC } from './Apps/AppHOC';
+import { AppCompound } from './Apps/AppCompound';
 
 export interface DemoApp {
   name: string;
@@ -22,6 +23,7 @@ const demoApps: DemoApp[] = [
   { name: "Error Boundary", component: <AppErrorBoundary /> },
   { name: "Render Props", component: <AppRenderProp /> },
   { name: "HOC", component: <AppHOC /> },
+  { name: "Compound", component: <AppCompound /> },
 ];
 
 const AppDemo = () => {
