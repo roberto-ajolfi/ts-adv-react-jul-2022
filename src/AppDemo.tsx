@@ -7,6 +7,7 @@ import Footer from './Footer';
 import App from './Apps/App';
 import NoMatch from './NoMatch';
 import { AppContext } from './Apps/AppContext';
+import { AppErrorBoundary } from './Apps/AppErrorBoundary';
 
 export interface DemoApp {
   name: string;
@@ -16,6 +17,7 @@ export interface DemoApp {
 const demoApps: DemoApp[] = [
   { name: "Welcome", component: <App /> },
   { name: "Context", component: <AppContext /> },
+  { name: "ErrBoundary", component: <AppErrorBoundary /> },
 ];
 
 const AppDemo = () => {

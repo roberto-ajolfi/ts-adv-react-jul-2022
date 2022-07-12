@@ -48,7 +48,6 @@ export const RedCtx: React.FC = () => {
         <AppContext.Provider value={{ value, onIncrement: () => { setValue(value + 1); } }}>
             <div style={boxStyle}><GreenCtx /></div>
         </AppContext.Provider>
-        
     )
 }
 

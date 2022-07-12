@@ -5,13 +5,16 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import AppDemo from './AppDemo';
 import reportWebVitals from './reportWebVitals';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <AppDemo />
+    <ErrorBoundary>
+      <AppDemo />
+    </ErrorBoundary>
   </React.StrictMode>
 );
 
