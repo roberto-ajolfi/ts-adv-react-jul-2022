@@ -31,7 +31,7 @@ const NavigationBar = (props: { apps: DemoApp[] }) => {
                     <div className="collapse d-sm-inline-flex flex-sm-row-reverse" id="navbarSupportedContent">
                         <ul className="navbar-nav flex-grow">
                             {demoLinks}
-                            <NavLink to='/lazy'>Lazy</NavLink>
+                            <NavLink to='/lazy' style={ (isActive) => isActive ? navActiveStyle : navInactiveStyle } key={999}>Lazy</NavLink>
                         </ul>
                     </div>
                 </div>

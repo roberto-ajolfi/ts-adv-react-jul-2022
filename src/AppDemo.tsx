@@ -12,6 +12,7 @@ import { AppRenderProp } from './Apps/AppRenderProp';
 import { AppHOC } from './Apps/AppHOC';
 import { AppCompound } from './Apps/AppCompound';
 import { AppLazy } from './Apps/AppLazy';
+import { AppLibrary } from './Apps/AppLibrary';
 
 export interface DemoApp {
   name: string;
@@ -25,7 +26,7 @@ const demoApps: DemoApp[] = [
   { name: "Render Props", component: <AppRenderProp /> },
   { name: "HOC", component: <AppHOC /> },
   { name: "Compound", component: <AppCompound /> },
-  // { name: "Lazy", component: <AppLazy /> },
+  { name: "Library", component: <AppLibrary /> },
 ];
 
 const AppDemo = () => {
