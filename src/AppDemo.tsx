@@ -11,6 +11,7 @@ import { AppErrorBoundary } from './Apps/AppErrorBoundary';
 import { AppRenderProp } from './Apps/AppRenderProp';
 import { AppHOC } from './Apps/AppHOC';
 import { AppCompound } from './Apps/AppCompound';
+import { AppLazy } from './Apps/AppLazy';
 
 export interface DemoApp {
   name: string;
@@ -24,6 +25,7 @@ const demoApps: DemoApp[] = [
   { name: "Render Props", component: <AppRenderProp /> },
   { name: "HOC", component: <AppHOC /> },
   { name: "Compound", component: <AppCompound /> },
+  // { name: "Lazy", component: <AppLazy /> },
 ];
 
 const AppDemo = () => {
@@ -41,6 +43,7 @@ const AppDemo = () => {
         <div className="container">
           <Routes>
             {routes}
+            <Route path='/lazy/*' element={<AppLazy />} />
             <Route element={<NoMatch />} />
           </Routes>
         </div>
