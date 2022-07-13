@@ -77,3 +77,34 @@
 .imageGallery {
   max-width: 500px;
 }
+
+.notificationWindow {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 250px;
+  height: 100px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.notificationHeader {
+  top: 0;
+  background-color: forestgreen;
+  width: 250px;
+  text-align: right;
+}
+
+.notificationClose {
+  background-color: forestgreen;
+  color: white;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 0;
+}
+
+.notificationMessage {
+  font-weight: bold;
+  text-align: center;
+}
