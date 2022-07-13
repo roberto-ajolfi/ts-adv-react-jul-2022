@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.picture {
+  border: 4px solid black;
+}
+
+.picture img {
+  width: 100%;
+}
+
+.previewList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.previewList img {
+  width: 100%;
+  line-height: 0;
+}
+
+.previewListItem {
+  flex-basis: 50%;
+  cursor: pointer;
+  max-width: 25%;
+  border-bottom: 4px solid transparent;
+}
+
+.previewListItem.isActive {
+  border-color: crimson;
+}
+
+.previewListItem.isActive img {
+  opacity: 0.4;
+}
+
+.previewStatus {
+  text-align: center;
+}
+
+.imageGallery {
+  max-width: 500px;
+}
