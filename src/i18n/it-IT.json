@@ -1,0 +1,7 @@
+{
+    "title" : "Benvenuti in Italia !!!",
+    "welcome" : "Ciao {{firstname}} {{lastname}}.",
+    "today" : "Oggi è il {{date, DD-MMM-YYYY}}",
+    "feeling" : "E mi sento {{feeling, uppercase}}",
+    "<0>Localize With i18Next</0>" : "<0>Localizzazione con i18Next</0>"
+}

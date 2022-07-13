@@ -1,0 +1,7 @@
+{
+    "title" : "Welcome to England !",
+    "welcome" : "Welcome, {{firstname}} {{lastname}}.",
+    "today" : "Today is {{date, DD-MMM-YYYY}}",
+    "feeling" : "And I'm {{feeling, uppercase}}",
+    "<0>Localize With i18Next</0>" : "<0>Localize With i18Next</0>"
+}

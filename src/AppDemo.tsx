@@ -13,6 +13,7 @@ import { AppHOC } from './Apps/AppHOC';
 import { AppCompound } from './Apps/AppCompound';
 import { AppLazy } from './Apps/AppLazy';
 import { AppLibrary } from './Apps/AppLibrary';
+import { AppI18N } from './Apps/AppI18N';
 
 export interface DemoApp {
   name: string;
@@ -27,6 +28,7 @@ const demoApps: DemoApp[] = [
   { name: "HOC", component: <AppHOC /> },
   { name: "Compound", component: <AppCompound /> },
   { name: "Library", component: <AppLibrary /> },
+  { name: "i18n", component: <AppI18N /> },
 ];
 
 const AppDemo = () => {
