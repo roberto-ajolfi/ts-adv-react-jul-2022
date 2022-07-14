@@ -20,7 +20,7 @@ export const UseEffectDemo = () => {
     
     return (
         <div style={{ padding:"5px", border: "2px dashed goldenrod"}}>
-            <div>UseEffectDemo</div>
+            <div>UseEffectDemo Component</div>
             <button className='bnt btn-dark' 
                 onClick={() => setToggle(!toggle)}>Change State
             </button>
