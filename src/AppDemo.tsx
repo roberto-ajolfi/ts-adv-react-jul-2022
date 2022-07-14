@@ -16,6 +16,7 @@ import { AppLibrary } from './Apps/AppLibrary';
 import { AppI18N } from './Apps/AppI18N';
 import { AppPortal } from './Apps/AppPortal';
 import { AppRefs } from './Apps/AppRefs';
+import { AppMemo } from './Apps/AppMemo';
 
 export interface DemoApp {
   name: string;
@@ -33,6 +34,7 @@ const demoApps: DemoApp[] = [
   { name: "i18n", component: <AppI18N /> },
   { name: "Portal", component: <AppPortal /> },
   { name: "REFs", component: <AppRefs /> },
+  { name: "Memoization", component: <AppMemo /> },
 ];
 
 const AppDemo = () => {
