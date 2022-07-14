@@ -17,6 +17,7 @@ import { AppI18N } from './Apps/AppI18N';
 import { AppPortal } from './Apps/AppPortal';
 import { AppRefs } from './Apps/AppRefs';
 import { AppMemo } from './Apps/AppMemo';
+import { AppHooks } from './Apps/AppHooks';
 
 export interface DemoApp {
   name: string;
@@ -35,6 +36,7 @@ const demoApps: DemoApp[] = [
   { name: "Portal", component: <AppPortal /> },
   { name: "REFs", component: <AppRefs /> },
   { name: "Memoization", component: <AppMemo /> },
+  { name: "Hooks", component: <AppHooks /> },
 ];
 
 const AppDemo = () => {
